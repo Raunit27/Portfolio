@@ -1,0 +1,597 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!-- <style>
+    h1 {
+  font-size: 9vmin;
+  color: #8bf;
+  text-align: left;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  margin: 1rem 0 1rem 2rem;
+}
+
+/* Typewriter effect 1 */
+@keyframes typing {
+  0.0000%, 27.3488% { content: ""; }
+  1.1395%, 26.2093% { content: "d"; }
+  2.2791%, 25.0698% { content: "de"; }
+  3.4186%, 23.9302% { content: "dev"; }
+  4.5581%, 22.7907% { content: "deve"; }
+  5.6977%, 21.6512% { content: "devel"; }
+  6.8372%, 20.5116% { content: "develo"; }
+  7.9767%, 19.3721% { content: "develop"; }
+  9.1163%, 18.2326% { content: "develope"; }
+  10.2558%, 17.0930% { content: "developer"; }
+
+  30.7674%, 51.2791% { content: ""; }
+  31.9070%, 50.1395% { content: "r"; }
+  33.0465%, 49.0000% { content: "ra"; }
+  34.1860%, 47.8605% { content: "rau"; }
+  35.3256%, 46.7209% { content: "raun"; }
+  36.4651%, 45.5814% { content: "rauni"; }
+  37.6047%, 44.4419% { content: "raunit"; }
+
+  
+
+  
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+  border-right: 1ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+  border-right: 0;
+}
+
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+  
+  @keyframes sequencePopup {
+    0%, 100% { content: "Raunit"; }
+    25% { content: "developer"; }
+    50% { content: "Raunit"; }
+    75% { content: "developer"; }
+    
+    
+  }
+
+  .typewriter::before {
+    content: "developer";
+    animation: sequencePopup 12s linear infinite;
+  }
+}
+
+//
+</style> -->
+
+<body class="bg-black">
+    <div class="">
+
+        <!-- navbar   start -->
+
+
+        <nav class="bg-white border-gray-200 dark:bg-gray-900  w-full ">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <!-- <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" /> -->
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Portfolio</span>
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 "
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                </button>
+                <div class="hidden w-full md:block md:w-auto " id="navbar-default">
+                    <ul
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="index.html"
+                                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#skills"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">skills</a>
+                        </li>
+                        <li>
+                            <a href="#expreience"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#projects"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar   End -->
+    </div>
+
+    <!-- front page -->
+    <div class="flex-auto md:inline-flex justify-between  md:mt-32 md:flex-row-reverse flex-col">
+
+        <div class="md:ml-40 mt-5 md:mt-auto   flex justify-center items-center md:flex-row-reverse">
+            <img src="img2.png" alt="" class="h-60 md:h-96 md:mr-28">
+        </div>
+        <div class="text-center md:w-1/2  md:ml-12">
+            <p class="text-white md:mt-28 font-semibold text-4xl text-center animate-pulse">
+
+            <h1 id="text" aria-label="Hi! I'm a developer"
+                class="text-white md:mt-28 font-semibold text-4xl text-center">
+
+            </h1>
+
+            </span>
+            </h1>
+            </p>
+            <p class="text-white pt-5">"I am a web developer passionate about crafting user-friendly interfaces and
+                scalable applications, proficient in front-end and back-end technologies."</p>
+            <div class="  flex flex-row items-center m-auto mt-6 md:ml-36 md:mt-12">
+                <div class="ml-24"> <a href="#contact">
+                        <button type="button"
+                            class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Contact
+                            me</button>
+                    </a></div>
+                <!-- <div class="m-4">
+                    <a href="Raunit_Marshettiwar_resume.pdf" download="cv.pdf"
+                        class="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded">
+                        Download CV
+                    </a>
+                </div> -->
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <!-- front page end -->
+    <!-- programing skills -->
+    <div class="md:mt-40 m-5" id="skills">
+        <div class="text-center items-center flex flex-wrap flex-col">
+            <p class="text-indigo-400 text-2xl font-bold md:text-4xl"><span class="text-red-800">&lt;h1&gt;</span>My
+                Skills<span class="text-red-800">&lt;/h1&gt;</span></p>
+            <div class="w-40 h-1 border-b-4 border-yellow-500 mt-4 rounded-lg mb-10 md:mr-6 "></div>
+        </div>
+        <div class=" md:grid-cols-5  gap-8 md:ml-40 md:mr-40 grid grid-cols-2">
+            <div class="text-center items-center flex flex-col mb-4">
+                <figure class="max-w-lg ">
+                    <img class="md:h-40 rounded-lg  animate-pulse" src="images/new_c++.png" alt="image description">
+                    <!-- <figcaption class=" font-bold text-2xl text-gray-500 dark:text-gray-400">C/C++</figcaption> -->
+                </figure>
+            </div>
+
+            <div class="text-center items-center flex flex-col mb-4">
+                <figure class="max-w-lg ">
+                    <img class="md:h-40 rounded-lg animate-pulse " src="images/new_java.png" alt="image description">
+                    <!-- <figcaption class=" font-bold text-xl  text-white">Java</figcaption>
+            </figure> -->
+            </div>
+
+            <div class="text-center items-center flex flex-col mb-4">
+                <figure class="max-w-lg ">
+                    <img class="md:h-40 rounded-lg   animate-pulse" src="images/html.png" alt="image description">
+                    <!-- <figcaption class=" font-bold text-xl  text-white">Html</figcaption>
+            </figure> -->
+            </div>
+
+            <div class="text-center items-center flex flex-col mb-4">
+                <figure class="max-w-lg ">
+                    <img class="md:h-40 rounded-lg animate-pulse " src="images/css.png" alt="image description">
+                    <!-- <figcaption class=" font-bold text-xl  text-white">Css</figcaption>
+            </figure> -->
+            </div>
+
+            <div class="text-center items-center flex flex-col mb-4">
+                <figure class="max-w-lg ">
+                    <img class="md:h-40 rounded-lg   animate-pulse" src="images/javascript.png" alt="image description">
+                    <!-- <figcaption class=" font-bold text-2xl   text-white">javascript</figcaption>
+            </figure> -->
+            </div>
+
+            <div class="text-center items-center flex flex-col mb-4">
+                <figure class="max-w-lg ">
+                    <img class="md:h-40 rounded-lg  animate-pulse" src="images/bootstrap.png" alt="image description">
+                    <!-- <figcaption class=" font-bold text-xl  text-white">bootstarp</figcaption>
+            </figure> -->
+            </div>
+
+            <div class="text-center items-center flex flex-col mb-4">
+                <figure class="max-w-lg ">
+                    <img class="md:h-40 rounded-lg   animate-pulse" src="images/tailwind.png" alt="image description">
+                    <!-- <figcaption class=" font-bold text-xl  text-white">Tailwind</figcaption>
+            </figure> -->
+            </div>
+
+
+            <div class="text-center items-center flex flex-col mb-4">
+                <figure class="max-w-lg ">
+                    <img class="md:h-40 rounded-lg  animate-pulse " src="images/php.png" alt="image description">
+                    <!-- <figcaption class="  font-bold text-xl  text-white">PHP</figcaption>
+            </figure> -->
+            </div>
+
+            <div class="text-center items-center flex flex-col mb-4">
+                <figure class="max-w-lg ">
+                    <img class="md:h-40 rounded-lg   animate-pulse" src="images/sql.png" alt="image description">
+                    <!-- <figcaption class=" font-bold text-xl  text-white">Sql</figcaption>
+            </figure> -->
+            </div>
+
+            <div class="text-center items-center flex flex-col mb-4">
+                <figure class="max-w-lg ">
+                    <img class="md:h-40 rounded-lg animate-pulse " src="images/new_github.png" alt="image description">
+                    <!-- <figcaption class=" font-bold text-xl  text-white">Sql</figcaption>
+            </figure> -->
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <!-- programing skills end -->
+
+    <!-- work expreience start -->
+
+
+    <div class="md:mt-28 m-5" id="expreience">
+
+        <div class="text-center items-center flex flex-wrap flex-col">
+            <p class="text-indigo-400 text-2xl font-bold md:text-4xl"><span class="text-red-800">&lt;exp&gt;</span>work
+                expreience<span class="text-red-800">&lt;/exp&gt;</span></p>
+            <div class=" w-40 md:w-80 h-1 border-b-4 border-yellow-500 mt-4 rounded-lg mb-12 md:mr-6 "></div>
+        </div>
+        <div>
+            <section class="text-gray-600 body-font overflow-hidden">
+                <div class="container px-5  mx-auto">
+                    <div class="-my-8 divide-y-2 divide-gray-100">
+                        <div class="py-8 flex flex-wrap md:flex-nowrap">
+                            <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                                <span class="font-bold title-font text-white">Internship</span>
+                                <span class="mt-1 text-white text-sm">12/2023 -current</span>
+                            </div>
+                            <div class="md:flex-grow">
+                                <h2 class="text-2xl font-medium text-white title-font mb-2">AbCoEdtech-Intern</h2>
+                                <p class="leading-relaxed text-white">Developed and maintain website using
+                                    Html,CSS,javascript,bootstrap,tailwind,Sql,Php.
+                                    Integrated frontend code with sever side code to implement dynamic pages.
+                                </p>
+                                <!-- <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- work experience end -->
+    <!-- project Start -->
+    <section class="md:block hidden">
+        <div class="text-center items-center flex flex-wrap flex-col mt-20" id="projects">
+            <p class="text-indigo-400 text-2xl font-bold md:text-4xl"><span
+                    class="text-red-800">&lt;p&gt;</span>Projects<span class="text-red-800">&lt;/p&gt;</span></p>
+            <div class="w-36 h-1 border-b-4 border-yellow-500 mt-4 rounded-lg mb-12 md:mr-6 "></div>
+        </div>
+        <div class="bg-black text-white py-8">
+            <div class="container mx-auto flex flex-col items-start md:flex-row ">
+                <div class="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
+                    <p class="ml-2 text-yellow-300 uppercase tracking-loose"></p>
+                    <p class="text-3xl text-yellow-300 md:text-4xl leading-normal md:leading-relaxed mb-2">Projects
+                        Showcase</p>
+                    <p class="text-sm md:text-base text-gray-50 mb-4 italic">
+                        I feature a range of endeavors focused on HTML, CSS, Tailwind CSS, Bootstrap, PHP, and
+                        JavaScript. Each project demonstrates my adeptness in frontend and backend development,
+                        leveraging these technologies to create dynamic, responsive, and visually compelling web
+                        applications.
+                    </p>
+                    <!-- <a href="#"
+                        class="bg-transparent mr-auto hover:bg-yellow-300 text-yellow-300 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent">
+                        Explore Now</a> -->
+                </div>
+                <div class="ml-0 md:ml-12 lg:w-2/3 sticky">
+                    <div class="container mx-auto w-full h-full">
+                        <div class="relative wrap overflow-hidden p-10 h-full">
+                            <div class="border-2-2 border-yellow-555 absolute h-full border"
+                                style="right: 50%; border: 2px solid #FFC100; border-radius: 1%;"></div>
+                            <div class="border-2-2 border-yellow-555 absolute h-full border"
+                                style="left: 50%; border: 2px solid #FFC100; border-radius: 1%;"></div>
+                            <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                                <div class="order-1 w-5/12"></div>
+                                <div class="order-1 w-5/12 px-1 py-4 text-right">
+                                    <p class="mb-3 text-base text-yellow-300"></p>
+                                    <h4 class="mb-3 font-bold text-lg md:text-2xl"></h4>
+                                    <article
+                                        class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto ">
+                                        <img src="images/event.png" alt="University of Southern California"
+                                            class="absolute inset-0 h-auto w-full object-cover">
+
+                                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900"></div>
+                                        <h3 class="z-10 mt-3 text-3xl font-bold text-white">Event management</h3>
+                                        <div class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300"></div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                                <div class="order-1 w-5/12"></div>
+                                <div class="order-1  w-5/12 px-1 py-4 text-left">
+                                    <p class="mb-3 text-base text-yellow-300"></p>
+                                    <h4 class="mb-3 font-bold text-lg md:text-2xl"></h4>
+                                    <article
+                                        class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto ">
+                                        <img src="images/abcoedtech.png" alt="University of Southern California"
+                                            class="absolute inset-0  h-auto w-full object-cover">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-orange-900"></div>
+                                        <h3 class="z-10 mt-3 text-3xl font-bold text-white">Abcoedtech</h3>
+                                        <div class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300"></div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                                <div class="order-1 w-5/12"></div>
+                                <div class="order-1 w-5/12 px-1 py-4 text-right">
+                                    <p class="mb-3 text-base text-yellow-300"></p>
+                                    <h4 class="mb-3 font-bold text-lg md:text-2xl"></h4>
+                                    <article
+                                        class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto ">
+                                        <img src="images/acetech.png" alt="University of Southern California"
+                                            class="absolute inset-0 h-auto w-full object-cover">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900"></div>
+                                        <h3 class="z-10 mt-3 text-3xl font-bold text-white">Acetech</h3>
+                                        <div class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300"></div>
+                                    </article>
+                                </div>
+                            </div>
+
+                            <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                                <div class="order-1 w-5/12"></div>
+
+                                <div class="order-1  w-5/12 px-1 py-4">
+                                    <p class="mb-3 text-base text-yellow-300"></p>
+                                    <h4 class="mb-3 font-bold  text-lg md:text-2xl text-left"></h4>
+                                    <article
+                                        class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto ">
+                                        <img src="images/dineout1.png" alt="University of Southern California"
+                                            class="absolute inset-0 h-auto w-full object-cover">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-orange-900"></div>
+                                        <h3 class="z-10 mt-3 text-3xl font-bold text-white">Dineout cafetaria</h3>
+                                        <div class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300"></div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="mx-auto -mt-36 md:-mt-36" src="images/project_00.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="m-10 md:hidden flex flex-col justify-center">
+        <div class="text-center items-center flex flex-wrap flex-col mt-20" id="projects">
+            <p class="text-indigo-400 text-2xl font-bold md:text-4xl"><span
+                    class="text-red-800">&lt;p&gt;</span>Projects<span class="text-red-800">&lt;/p&gt;</span></p>
+            <div class="w-36 h-1 border-b-4 border-yellow-500 mt-4 rounded-lg mb-12 md:mr-6 "></div>
+        </div>
+        <div class="mb-8 flex justify-between  items-center w-full left-timeline">
+            <div class="order-1 w-5/12"></div>
+            <div class="order-1 w-auto px-1 py-4 text-left">
+                <p class="mb-3 text-base text-yellow-300"></p>
+                <h4 class="mb-3 font-bold text-lg md:text-2xl"></h4>
+                <article
+                    class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40  mx-auto ">
+                    <img src="images/event.png" alt="University of Southern California"
+                        class="absolute inset-0 h-auto w-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-900"></div>
+                    <h3 class="z-10 mt-3 text-2xl font-bold text-white">Event management</h3>
+                    <div class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300"></div>
+                </article>
+            </div>
+        </div>
+
+        <div class="mb-8 flex justify-between  items-center w-full left-timeline">
+            <div class="order-1 w-5/12"></div>
+            <div class="order-1 w-auto px-1 py-4 text-left">
+                <p class="mb-3 text-base text-yellow-300"></p>
+                <h4 class="mb-3 font-bold text-lg md:text-2xl"></h4>
+                <article
+                    class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40  mx-auto ">
+                    <img src="images/abcoedtech.png" alt="University of Southern California"
+                        class="absolute inset-0 h-auto w-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-orange-900"></div>
+                    <h3 class="z-10 mt-3 text-2xl font-bold text-white">Abcoedtech</h3>
+                    <div class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300"></div>
+                </article>
+            </div>
+        </div>
+
+        <div class="mb-8 flex justify-between  items-center w-full left-timeline">
+            <div class="order-1 w-5/12"></div>
+            <div class="order-1 w-auto px-1 py-4 text-left">
+                <p class="mb-3 text-base text-yellow-300"></p>
+                <h4 class="mb-3 font-bold text-lg md:text-2xl"></h4>
+                <article
+                    class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40  mx-auto ">
+                    <img src="images/acetech.png" alt="University of Southern California"
+                        class="absolute inset-0 h-auto w-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-900"></div>
+                    <h3 class="z-10 mt-3 text-4xl font-bold text-white">Acetech</h3>
+                    <div class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300"></div>
+                </article>
+            </div>
+        </div>
+
+        <div class="mb-8 flex justify-between  items-center w-full left-timeline">
+            <div class="order-1 w-5/12"></div>
+            <div class="order-1 w-auto px-1 py-4 text-left">
+                <p class="mb-3 text-base text-yellow-300"></p>
+                <h4 class="mb-3 font-bold text-lg md:text-2xl"></h4>
+                <article
+                    class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40  mx-auto ">
+                    <img src="images/dineout1.png" alt="University of Southern California"
+                        class="absolute inset-0 h-auto w-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-900"></div>
+                    <h3 class="z-10 mt-3 text-4xl font-bold text-white">Dineout</h3>
+                    <div class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300"></div>
+                </article>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- project end -->
+
+    <!-- contact me -->
+
+    <div>
+        <div class="text-center items-center flex flex-wrap flex-col mt-20" id="contact">
+            <p class="text-indigo-400 text-2xl font-bold md:text-4xl"><span class="text-red-800">&lt;p&gt;</span>Get in
+                touch<span class="text-red-800">&lt;/p&gt;</span></p>
+            <div class="w-52 h-1 border-b-4 border-yellow-500 mt-4 rounded-lg  md:mr-2 "></div>
+        </div>
+        <div class="md:flex  flex-auto">
+            <div class="pl-6 md:pl-24 mt-12 mr-20">
+                <div class="flex items-center text-white md:mt-28">
+                    <img src="images/gmail.png" alt="Email Icon" class="h-5 w-5 mr-2">
+                    <p class="text-white">rounitmarshettiwar580@gmail.com</p>
+                </div>
+                <div class="flex items-center text-white mt-4">
+                    <img src="images/telephone.png" alt="Email Icon" class="h-5 w-5 mr-2">
+                    <p class="text-white">7887679827</p>
+                </div>
+                <div class="flex items-center text-white gap-2 mt-8 ">
+                    <a href="#"><img src="images/facebook-logo.png" alt="Email Icon" class="h-7 w-7 mr-2"></a>
+                    <a href="#"><img src="images/twitter-logo.png" alt="Email Icon" class="h-7 w-7 mr-2"></a>
+                    <a href="https://www.instagram.com/invites/contact/?i=19fx5kiewwpju&utm_content=33yylq2"><img src="images/instagram.png"  alt="Email Icon" class="h-7 w-7 mr-2"></a>
+                    <a href="https://www.linkedin.com/in/raunit-marshettiwar-705755230/"><img src="images/linkedin.png" alt="Email Icon" class="h-7 w-7 mr-2"></a>
+                </div>
+
+                <div class="m-9 ml-4">
+                    <a href="Raunit_Marshettiwar_resume.pdf" download="cv.pdf"
+                        class="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Download CV
+                    </a>
+                </div>
+
+
+                <!-- <div class="pt-5">
+                    <button type="button"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Contact
+                        me</button>
+    
+                </div> -->
+            </div>
+            <div class="py-8 lg:py-16 px-4 mx-auto w-full  md:p-56">
+                <form action="#" class="space-y-8">
+
+                    <div>
+                        <label for="subject"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Name</label>
+                        <input type="text" id="subject"
+                            class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                            placeholder="Name" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
+                            email</label>
+                        <input type="email" id="email"
+                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                            placeholder="@gmail.com" required>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="message"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your
+                            message</label>
+                        <textarea id="message" rows="6"
+                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                            placeholder="Leave a message..."></textarea>
+                    </div>
+
+                    <button type="button"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact me end-->
+
+
+    <script>
+        const textElement = document.getElementById('text');
+        const sentences = [
+            "I am Raunit Marshettiwar.",
+            "I am a Developer."
+        ];
+        let index = 0;
+        let sentenceIndex = 0;
+
+        function typeWriter() {
+            if (index < sentences[sentenceIndex].length) {
+                textElement.textContent += sentences[sentenceIndex].charAt(index);
+                index++;
+                setTimeout(typeWriter, 100); // Adjust the typing speed here (in milliseconds)
+            } else {
+                // Reset index to 0 to start typing from the beginning again
+                index = 0;
+                sentenceIndex = (sentenceIndex + 1) % sentences.length; // Move to the next sentence or wrap around
+                textElement.textContent = ''; // Clear the text for the next iteration
+                setTimeout(typeWriter, 1000); // Delay before starting typing again (in milliseconds)
+            }
+        }
+
+        // Start typing when the page loads
+        window.onload = function () {
+            typeWriter();
+        };
+    </script>
+
+</body>
+
+
+</html>
