@@ -6,15 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("hDTDm95vv0pGuVHbc");
-   })();
-</script>
-
 <!-- <style>
     h1 {
   font-size: 9vmin;
@@ -170,19 +161,11 @@
             </p>
             <p class="text-white pt-5">"I am a web developer passionate about crafting user-friendly interfaces and
                 scalable applications, proficient in front-end and back-end technologies."</p>
-            <div class="  flex flex-row items-center m-auto mt-6 md:ml-36 md:mt-12">
-                <div class="ml-24"> <a href="#contact">
-                        <button type="button"
-                            class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Contact
-                            me</button>
-                    </a></div>
-                <!-- <div class="m-4">
-                    <a href="Raunit_Marshettiwar_resume.pdf" download="cv.pdf"
-                        class="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded">
-                        Download CV
-                    </a>
-                </div> -->
-            </div>
+                <div class=" pt-5  "> <a href="#contact">
+                    <button type="button"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Contact
+                        me</button>
+                </a></div>
         </div>
 
 
@@ -420,15 +403,16 @@
             </div>
         </div>
     </section>
-    <section class="m-10 md:hidden flex flex-col justify-center">
+    <section class=" md:hidden flex flex-col">
         <div class="text-center items-center flex flex-wrap flex-col mt-20" id="projects">
             <p class="text-indigo-400 text-2xl font-bold md:text-4xl"><span
                     class="text-red-800">&lt;p&gt;</span>Projects<span class="text-red-800">&lt;/p&gt;</span></p>
             <div class="w-36 h-1 border-b-4 border-yellow-500 mt-4 rounded-lg mb-12 md:mr-6 "></div>
         </div>
-        <div class="mb-8 flex justify-between  items-center w-full left-timeline">
+       <div class="p-auto mr-20 ">
+        <div class="mb-8 flex justify-between items-center w-full left-timeline">
             <div class="order-1 w-5/12"></div>
-            <div class="order-1 w-auto px-1 py-4 text-left">
+            <div class="order-1 w-full px-1 py-4 text-left">
                 <p class="mb-3 text-base text-yellow-300"></p>
                 <h4 class="mb-3 font-bold text-lg md:text-2xl"></h4>
                 <article
@@ -444,7 +428,7 @@
 
         <div class="mb-8 flex justify-between  items-center w-full left-timeline">
             <div class="order-1 w-5/12"></div>
-            <div class="order-1 w-auto px-1 py-4 text-left">
+            <div class="order-1 w-full px-1 py-4 text-left">
                 <p class="mb-3 text-base text-yellow-300"></p>
                 <h4 class="mb-3 font-bold text-lg md:text-2xl"></h4>
                 <article
@@ -460,7 +444,7 @@
 
         <div class="mb-8 flex justify-between  items-center w-full left-timeline">
             <div class="order-1 w-5/12"></div>
-            <div class="order-1 w-auto px-1 py-4 text-left">
+            <div class="order-1 w-full px-1 py-4 text-left">
                 <p class="mb-3 text-base text-yellow-300"></p>
                 <h4 class="mb-3 font-bold text-lg md:text-2xl"></h4>
                 <article
@@ -476,7 +460,7 @@
 
         <div class="mb-8 flex justify-between  items-center w-full left-timeline">
             <div class="order-1 w-5/12"></div>
-            <div class="order-1 w-auto px-1 py-4 text-left">
+            <div class="order-1 w-full px-1 py-4 text-left">
                 <p class="mb-3 text-base text-yellow-300"></p>
                 <h4 class="mb-3 font-bold text-lg md:text-2xl"></h4>
                 <article
@@ -489,6 +473,7 @@
                 </article>
             </div>
         </div>
+       </div>
 
 
     </section>
@@ -535,12 +520,12 @@
                 </div> -->
             </div>
             <div class="py-8 lg:py-16 px-4 mx-auto w-full  md:p-56">
-                <form id="form" class="space-y-8">
+                <form action="#" class="space-y-8">
 
                     <div>
-                        <label for="name"
+                        <label for="subject"
                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Name</label>
-                        <input type="text" id="name"
+                        <input type="text" id="subject"
                             class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                             placeholder="Name" required>
                     </div>
@@ -560,7 +545,7 @@
                             placeholder="Leave a message..."></textarea>
                     </div>
 
-                    <button type="submit"
+                    <button type="button"
                         class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
 
                 </form>
@@ -598,34 +583,7 @@
         window.onload = function () {
             typeWriter();
         };
-
-       const form = document.getElementById('form');
-       form.addEventListener("submit", e =>{
-           e.preventDefault();
-           const name = document.getElementById('name').value;
-           const email = document.getElementById('email').value;
-           const message = document.getElementById('message').value;
-           var templateParams = {
-            to_name: name,
-            from_email: email,
-            message: message
-        };
-        emailjs.send('service_4nisatt', 'template_key4kwh', templateParams)
-    .then(function(response) {
-       console.log('SUCCESS!', response.status, response.text);
-       alert("Your message has been sent successfully");
-    }, function(error) {
-       console.log('FAILED...', error);
-       alert("Your message has not been sent successfully");
-    });
-
-       })
-        
- 
-
     </script>
-
-    
 
 </body>
 
