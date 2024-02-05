@@ -611,6 +611,7 @@
     emailjs.send('service_4nisatt', 'template_key4kwh', templateParams)
     .then((response)=> {
         alert('Message sent successfully');
+        location.reload();
         
     }, (error) =>{
         alert('Message not sent');
